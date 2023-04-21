@@ -1,8 +1,7 @@
 import React, {FormEvent} from 'react';
 import {useGlobalContext} from "../context/Context";
-
 function NameForm() {
-    const {setName}: any = useGlobalContext();
+    const {setName} : any = useGlobalContext();
 
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
