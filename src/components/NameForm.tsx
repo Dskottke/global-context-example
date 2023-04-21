@@ -10,9 +10,8 @@ function NameForm() {
         setName(data.get('name'))
     }
     return (
-        <form onSubmit={onSubmit}>
-            <label htmlFor={'name'}></label>
-            <input id={'name'} name={'name'} type={'text'}/>
+        <form className={"name-form"} onSubmit={onSubmit}>
+            <input name={'name'} type={'text'}/>
             <button type={'submit'}>change name</button>
         </form>
     );
